@@ -1,0 +1,282 @@
+html, body { 
+    --color-1: #EBE2CF;
+    --color-2: #D58D8F; 
+    --color-3: #86837B; 
+    --color-4: #136E7D; 
+    --color-5: #ff8b94;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    padding-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    color: black;
+   
+}
+
+h1{
+    font-weight: bold;
+    color: #136E7D;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    /*box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);*/
+    padding: 50px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+   font: none;
+}
+
+
+.instructions {
+    font-weight:  800;
+    font-style: italic;
+    color: #D58D8F;
+}
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline;
+}
+
+
+#rollBtn {
+    background-color: #136E7D;
+}
+
+#resetBtn {
+    background-color: #415B97;
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
+
+#rain {
+    display: none;
+}
+
+.fish-1 {
+    background-image:  url(images/fish1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+     animation: tunaRain-1 0.5s infinite;
+     position: absolute;
+     height: 100px;
+     width: 100px;
+    
+}
+
+.fish-2 {
+    background-image:  url(images/fish2.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: tunaRain-2 1.5s infinite;
+     position: absolute;
+     height: 100px;
+     width: 100px;
+}
+
+.fish-3 {
+    background-image:  url(images/fish3.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: tunaRain-3 1s infinite;
+     position: absolute;
+     height: 100px;
+     width: 100px;
+}
+
+.fish-4 {
+    background-image:  url(images/fish4.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: tunaRain-4 0.5s infinite;
+     position: absolute;
+     height: 100px;
+     width: 100px;
+}
+
+.fish-5 {
+    background-image:  url(images/fish5.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: tunaRain-5 1s infinite;
+     position: absolute;
+     height: 100px;
+     width: 100px;
+}
+
+.fish-6 {
+    background-image:  url(images/fish6.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: tunaRain-6 0.5s infinite;
+     position: absolute;
+     height: 100px;
+     width: 100px;
+}
+
+.dice-1 {
+    background-image:  url(images/dice1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.dice-2 {
+    background-image:  url(images/dice2.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dice-3 {
+    background-image:  url(images/dice3.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dice-4 {
+    background-image:  url(images/dice4.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dice-5 {
+    background-image:  url(images/dice5.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dice-6 {
+    background-image:  url(images/dice6.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@keyframes tunaRain-1 {
+    
+    0% {
+       top: 5px;
+       left: 10px;
+       
+    } 
+    100% {
+       top: 400px;
+       left: 10px;
+   }
+}
+    
+@keyframes tunaRain-2 {
+    
+    0% {
+       top: 100px;
+       left: 100px;
+       
+    } 
+    100% {
+       top: 400px;
+       left: 100px;
+   }
+}
+
+@keyframes tunaRain-3{
+    
+    0% {
+       top: 10px;
+       left: 150px;  
+    } 
+    100% {
+       top: 400px;
+       left: 150px;  
+    }  
+} 
+       
+@keyframes tunaRain-4 {
+    
+    0% {
+       top: 200px;
+       left: 200px; 
+    } 
+    100% {
+       top: 300px;
+       left: 200px; 
+   }
+}
+       @keyframes tunaRain-5 {
+    
+    0% {
+       top: 50px;
+       left: 300px; 
+       
+    } 
+    100% {
+       top: 400px;
+       left: 300px; 
+   }
+}
+
+       @keyframes tunaRain-6 {
+    
+    0% {
+       top: 10px;
+       left: 400px; 
+       
+    } 
+    100% {
+       top: 400px;
+       left: 400px; 
+   }
+}
+   
+
